@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="isometric" width="45" height="45" tilewidth="100" tileheight="78">
+ <properties>
+  <property name="Snow" value="20"/>
+  <property name="Timeout" value="95"/>
+ </properties>
+ <tileset firstgid="1" name="mapForSanta" tilewidth="100" tileheight="100">
+  <image source="mapForSanta.png" width="1024" height="512"/>
+ </tileset>
+ <tileset firstgid="51" name="metaSprites" tilewidth="100" tileheight="100">
+  <image source="metaSprites.png" width="200" height="300"/>
+  <tile id="0">
+   <properties>
+    <property name="blocks_movement" value="1"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="Collectable" value="1"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="Finish" value="1"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="water" value="1"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="CollectableStone" value="1"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Ground" width="45" height="45">
+  <properties>
+   <property name="cc_vertexz" value="-998"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+2UWQ5CIQxFWYD7X6+/pt6prSaacJMXHtDhAIVzrq6ufk0P0D7KfJ1D/fq5eeaTMk9jK7Zz3jlYf8Ls2KtdzcPOBcWtY5Wjy5zMM07GgmKh8Q1zsr/VLqn/pOa/wawYk3p28TfMrO3ukXsbPnEHEYe6c8mes9huPSlzUnfIFvGrmIfYdpkTu6RO09hb5s7HOLsxtrXh3gTXV751jDFs1Lkv0316zTXxnd49NKfiJTk3zIm9Wk/ylqD/q9+Uew9c3SRvSnIfPsmMbNP7hv7dXMKL9uAczOF8GEOy3ymvahUfqgc2l4xvmN0bhhjUerprSJhZTaj8LqZqt1JsKI86g/QcEt+U2XEldjWm+yrHhLlTK4of+SR5Okr2OblziS9b10bs3FRNMl8Wd8vs6oudccKc1PKEWfm4c1dcndybfZ7ULcqdvBOT9TH2bn9aI1dXV1dX/6snqKgAT6QfAAA=
+  </data>
+ </layer>
+ <layer name="GroundObjects" width="45" height="45">
+  <properties>
+   <property name="cc_vertexz" value="-900"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3WOwrAIAwA0J6g0P/9b1oHC7ZLh0oj8h4EiVNMBB0GoFVjdAFUN0UXUIiqpaUeAHhr4W5PseX1CM6v9c2cYkmx5ojKy31oUa//8D/P1WsPuXvO2X+xT1/m6k4AADWc9WjQgKQfAAA=
+  </data>
+ </layer>
+ <layer name="ObjectsOverPlayer" width="45" height="45">
+  <properties>
+   <property name="cc_vertexz" value="automatic"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+1Ya2sDMQzLuu7Vcd/3/3/pOljA8yRZvisblAhCLi9bSX1yrmMsLNwvLt9lC+Xyz8XhHOsN7CfPZe28zvHP+Chs9RRqO+9XjVftAZ4ZJudqbraP/KDfhe0nt9X+Ky4bKGP83hviifiiWFUxfDSeUb8bD13/nTXsHLMNhyPjo3RBxRxD5pr3kGvkL7Yd3br1O8jOIWsg8qU4unz2xIZjq9ICR58d3WOInHO5jJ95UflTnF0N6XLuIPr5aPjKNjr9EYxzlR+cd4z1VWdeQa131jr2VEFr9/hl40r/nb123k2FKjbU2RzVku6eF/4W6P7m5JcqZrrvUlefI8/z4JzRt5fiw3SsGnM4n0l/rKc9lBfjuOKnNA49M8w57B7Hzr3KGWjM6T/CeZD2XDPPW9lU7SM5hXFke2Caq3Ipqt3cqDhvqQ9xd3/Hyn81ViHHRo7ffM6n0H+rnLZHN1DNxh+BjbdreU8cUM36VD/C1DqWU5z7NdpH5b+KeYWpAfnbZCLqd9bqh2Tr+Vpe0pzqfrWHM8rV8dzjHtB3bMTTtbwCzgpMa6o16L4Rzx0BxW/FydG3DmcH6q799R6ejLlzPsv9LudZmEY77SHGHK3u5JTMmf1PgP5Tz3Or52wH2XQ1fWFhYeHe8AkkoBavpB8AAA==
+  </data>
+ </layer>
+ <layer name="Meta" width="45" height="45">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+1XW4rDMAzMnTZdcv+T7U8NXqF5uYEtXQuCY1saTfSiPY4tWz5Xvt7wcTiP9Sw2FaPiIfzEP+Lzqg6ym79X3at9wof5ZXqdny4v6HsuoLfCGdUXW+f3q5wjLFTDq5xrDNhasVb9r9ggLglHho360okFw3XWznbeO3Pr7h504ozOGMeUj6Pjzg2k2/FP68bhgWxZzzMbxNmdISnnRKrvR4BzCr+vcEaxq/vH82G29UzF3OGM7B1bB8+pt5Sze49myvyu+s7tTZcTwle9iHDULEm/ecj3Gz6fyHmld52aSesy7X2Xs+p7F1fduZy784rhzCrGT9klnNXK5nC3H2v3+7/DuIszw1C1oTBme/QfiwnLL7u/iu8u9yp3Tt0wzirPSR6dPLg5Yjqofp0+q3rJDKhYLueR57E/y73igfijHHY4K7POjTPCSM7nOycmnS3rA5Q3NrsYdsf5PNY4H8fv/xBd3FX82fcq/3fUhtP73TvDd+ZbGmdHV/FyfCOfyXxWdezsmW9HV+VV2fz1s2XLli3/UX4AoJtYtaQfAAA=
+  </data>
+ </layer>
+ <objectgroup name="Objects" width="45" height="45">
+  <object name="SpawnMum" x="1560" y="1170" width="25" height="15">
+   <properties>
+    <property name="Mum" value="1"/>
+   </properties>
+  </object>
+  <object name="SpawnPlayer" gid="16" x="1638" y="2106"/>
+  <object name="EnemySpawn" x="2379" y="897">
+   <properties>
+    <property name="Enemy" value="2"/>
+   </properties>
+   <polygon points="0,0 0,156 151,155 155,-3"/>
+  </object>
+  <object name="EnemySpawn" x="1911" y="975">
+   <properties>
+    <property name="Enemy" value="3"/>
+   </properties>
+   <polygon points="0,0 2,235 309,232 311,1"/>
+  </object>
+  <object name="EnemySpawn" x="2769" y="975">
+   <properties>
+    <property name="Enemy" value="3"/>
+   </properties>
+   <polygon points="0,0 -2,234 312,234 309,1"/>
+  </object>
+  <object name="EnemySpawn" x="2223" y="2301">
+   <properties>
+    <property name="Enemy" value="2"/>
+   </properties>
+   <polygon points="0,0 0,156 151,155 155,-3"/>
+  </object>
+  <object name="EnemySpawn" x="2379" y="2223">
+   <properties>
+    <property name="Enemy" value="2"/>
+   </properties>
+   <polygon points="0,0 155,1 154,-156 -3,-155"/>
+  </object>
+  <object name="EnemySpawn" x="2613" y="2301">
+   <properties>
+    <property name="Enemy" value="3"/>
+   </properties>
+   <polygon points="0,0 -1,153 -157,155 -155,0"/>
+  </object>
+  <object name="EnemySpawn" x="429" y="507">
+   <properties>
+    <property name="Enemy" value="3"/>
+   </properties>
+   <polygon points="0,0 779,-1 779,704 -2,701"/>
+  </object>
+  <object name="EnemySpawn" x="1209" y="1209">
+   <properties>
+    <property name="Enemy" value="3"/>
+   </properties>
+   <polygon points="0,0 -781,-3 -780,-705 -1,-706"/>
+  </object>
+  <object name="EnemySpawn" x="585" y="585">
+   <properties>
+    <property name="Enemy" value="3"/>
+   </properties>
+   <polygon points="0,0 0,470 466,468 467,-3"/>
+  </object>
+  <object name="EnemySpawn" x="741" y="819">
+   <properties>
+    <property name="Enemy" value="2"/>
+   </properties>
+   <polygon points="0,0 155,3 161,153 3,155"/>
+  </object>
+  <object name="EnemySpawn" x="585" y="2457">
+   <properties>
+    <property name="Enemy" value="6"/>
+    <property name="Property" value="2"/>
+   </properties>
+   <polyline points="0,0 2,-696"/>
+  </object>
+  <object name="EnemySpawn" x="897" y="2613">
+   <properties>
+    <property name="Enemy" value="5"/>
+    <property name="Property" value="2"/>
+   </properties>
+   <polyline points="0,0 -1,-855"/>
+  </object>
+  <object name="SpawnCrocodile" x="1170" y="1638">
+   <properties>
+    <property name="Crocodile" value="1"/>
+    <property name="Gold" value="0"/>
+    <property name="Speed" value="40"/>
+   </properties>
+   <polyline points="0,0 541,3"/>
+  </object>
+  <object name="EnemySpawn" x="2145" y="1755">
+   <properties>
+    <property name="Enemy" value="5"/>
+    <property name="Property" value="3"/>
+   </properties>
+   <polyline points="0,0 549,-1"/>
+  </object>
+  <object name="Home" gid="11" x="1794" y="2418">
+   <properties>
+    <property name="Home" value="1"/>
+   </properties>
+  </object>
+  <object name="Home" gid="11" x="1482" y="2730">
+   <properties>
+    <property name="Home" value="1"/>
+   </properties>
+  </object>
+  <object name="Home" gid="11" x="1326" y="2340">
+   <properties>
+    <property name="Home" value="3"/>
+   </properties>
+  </object>
+  <object name="IceHole" gid="25" x="915" y="1677">
+   <properties>
+    <property name="IceHole" value="1"/>
+   </properties>
+  </object>
+  <object name="IceHole" gid="25" x="2044" y="1673">
+   <properties>
+    <property name="IceHole" value="1"/>
+   </properties>
+  </object>
+  <object name="Sleigh" gid="15" x="1574" y="1990">
+   <properties>
+    <property name="Sleigh" value="1"/>
+   </properties>
+  </object>
+  <object name="ElfLaugh" x="1623" y="1215" width="25" height="15">
+   <properties>
+    <property name="ElfLaugh" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

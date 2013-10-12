@@ -1,0 +1,21 @@
+info face="KingthingsPetrock" size=192 bold=0 italic=0 charset="" unicode=0 stretchH=100 smooth=1 aa=1 padding=0,0,0,0 spacing=4,4
+common lineHeight=220 base=174 scaleW=512 scaleH=512 pages=1 packed=0
+page id=0 file="MuseoFont_42-ipadhd.png"
+chars count=16
+char id=52 x=4 y=4 width=111 height=153 xoffset=-6 yoffset=38 xadvance=97 page=0 chnl=0 letter="4"
+char id=108 x=119 y=4 width=55 height=150 xoffset=-7 yoffset=35 xadvance=39 page=0 chnl=0 letter="l"
+char id=56 x=178 y=4 width=93 height=147 xoffset=-7 yoffset=38 xadvance=78 page=0 chnl=0 letter="8"
+char id=48 x=275 y=4 width=100 height=146 xoffset=-8 yoffset=39 xadvance=84 page=0 chnl=0 letter="0"
+char id=54 x=379 y=4 width=99 height=146 xoffset=-7 yoffset=39 xadvance=82 page=0 chnl=0 letter="6"
+char id=57 x=4 y=161 width=97 height=146 xoffset=-7 yoffset=39 xadvance=82 page=0 chnl=0 letter="9"
+char id=51 x=105 y=161 width=106 height=145 xoffset=-7 yoffset=40 xadvance=90 page=0 chnl=0 letter="3"
+char id=53 x=215 y=161 width=103 height=145 xoffset=-6 yoffset=40 xadvance=88 page=0 chnl=0 letter="5"
+char id=50 x=322 y=161 width=102 height=145 xoffset=-8 yoffset=39 xadvance=85 page=0 chnl=0 letter="2"
+char id=55 x=4 y=311 width=94 height=145 xoffset=-10 yoffset=40 xadvance=76 page=0 chnl=0 letter="7"
+char id=49 x=102 y=311 width=56 height=144 xoffset=-8 yoffset=40 xadvance=42 page=0 chnl=0 letter="1"
+char id=76 x=162 y=311 width=98 height=143 xoffset=-8 yoffset=41 xadvance=80 page=0 chnl=0 letter="L"
+char id=118 x=264 y=311 width=112 height=108 xoffset=-12 yoffset=76 xadvance=91 page=0 chnl=0 letter="v"
+char id=101 x=380 y=311 width=89 height=105 xoffset=-9 yoffset=80 xadvance=72 page=0 chnl=0 letter="e"
+char id=45 x=4 y=460 width=90 height=38 xoffset=-5 yoffset=94 xadvance=79 page=0 chnl=0 letter="-"
+char id=32 x=98 y=460 width=0 height=0 xoffset=-85 yoffset=294 xadvance=35 page=0 chnl=0 letter="space"
+kernings count=0

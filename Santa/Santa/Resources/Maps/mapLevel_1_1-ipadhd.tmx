@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="isometric" width="33" height="33" tilewidth="400" tileheight="312">
+ <properties>
+  <property name="Snow" value="60"/>
+  <property name="Timeout" value="95"/>
+ </properties>
+ <tileset firstgid="1" name="mapForSanta-hd" tilewidth="400" tileheight="400">
+  <image source="mapForSanta-ipadhd.png" width="4096" height="512"/>
+ </tileset>
+ <tileset firstgid="51" name="metaSprites-hd" tilewidth="400" tileheight="400">
+  <image source="metaSprites-ipadhd.png" width="400" height="300"/>
+  <tile id="0">
+   <properties>
+    <property name="blocks_movement" value="1"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="Collectable" value="1"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="Finish" value="1"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="water" value="1"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="CollectableStone" value="1"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Ground" width="33" height="33">
+  <properties>
+   <property name="cc_vertexz" value="-998"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+2TSw7AIAhEPUDvf95uGwIOf03KJG6wA4+Ca41G9+shh4tZTgYDyl3BEe2Z1vRwoD5pTOuPMEh5kT8yE8+8NfPxMHjr7Pa2kgH1/icGjTeTgfNwXhrLZEAsUs4uhor/gNgs9xGGrl2kvJnvIYuDq7WEeAZHpN9Khi+H9J3Gb62/y3krQ8csvLsYeRsoTzXDaHRCL3XNTqYEEQAA
+  </data>
+ </layer>
+ <layer name="GroundObjects" width="33" height="33">
+  <properties>
+   <property name="cc_vertexz" value="-900"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3TsQkAAAjAMC8Q/P9ZV2cRXJILujQCALiU3wGcq+8A1vwIwNThFSooBBEAAA==
+  </data>
+ </layer>
+ <layer name="ObjectsOverPlayer" width="33" height="33">
+  <properties>
+   <property name="cc_vertexz" value="automatic"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+1W2w7DIAh11V26xff9/5euZjM5I4iAbk+SkIrA8dSiNIQlS9py/4NqODzJ3D7wThXTygElNbCqL4FPy8PKQeurkuGZwUYeFg4lf2NiEmNXzWTey+EBHOi7oI3r5vD9bSR8DYcqFFOT38LxcpB8Uu2icDWh4VBrIMLYes5bfEf2AdelmFzOLA6tdTW5ozGae5ab5/akZ/c4aHKsPcLCQeuna53Cu47LMw5ysNSFhbe3ZjR1j3bpsxHGGGPh0IvFfm65M6z1oKlp7C+zz6Ynn8st+7V9NDL+Hg7XB6W7oMjl0CuZw/7v2SsOU8I7H3oLfA/bHRwSYFab68P0P0f6h5hxR0lxrbUjjL13lCcGOW2GHIr/K12yRJIXLZwLegQRAAA=
+  </data>
+ </layer>
+ <layer name="Meta" width="33" height="33">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+1VQQrDMAzrn7rC/v+ynQbBWEKSs51iKJTEdlRFVq/rxAkc9x8eFcNT1iaRYHgWDHfZW/vUdxWHgiHZqzndmQkGVFPXENcTDOq3JJqb8uBoE9Xt1EN3H6gmwYB0n3K+iwc0h4puJxi+/V9B7TRH8dluveNE1Q3CoNS4/whXk8q+g+FtYmC+pNQg3KlmFN2zmVZwdr3d+Vc9w7mLbh7ZPaD9Ll/FkNSj2XT8tfZh8878kfGXcOXywr7X1WTXD/mN44U7PIrlKXylHpXkrOelmvzlc+IEiw8xynD1BBEAAA==
+  </data>
+ </layer>
+ <objectgroup name="Objects" width="33" height="33">
+  <object name="SpawnMum" x="390" y="390" width="25" height="15">
+   <properties>
+    <property name="Mum" value="3"/>
+   </properties>
+  </object>
+  <object name="EnemySpawn" x="1049" y="1443">
+   <properties>
+    <property name="Enemy" value="4"/>
+   </properties>
+   <polygon points="0,0 3,233 159,237 152,-4"/>
+  </object>
+  <object name="EnemySpawn" x="1290" y="815">
+   <properties>
+    <property name="Enemy" value="3"/>
+   </properties>
+   <polygon points="0,0 -2,159 391,159 386,-2"/>
+  </object>
+  <object name="SpawnPlayer" gid="16" x="1638" y="1638"/>
+  <object name="Home" gid="11" x="468" y="780">
+   <properties>
+    <property name="Home" value="1"/>
+   </properties>
+  </object>
+  <object name="Home" gid="11" x="1404" y="1716">
+   <properties>
+    <property name="Home" value="1"/>
+   </properties>
+  </object>
+  <object name="Home" gid="11" x="1404" y="2028">
+   <properties>
+    <property name="Home" value="3"/>
+   </properties>
+  </object>
+  <object name="Home" gid="11" x="1794" y="1560">
+   <properties>
+    <property name="Home" value="4"/>
+   </properties>
+  </object>
+  <object name="Home" gid="11" x="702" y="702">
+   <properties>
+    <property name="Home" value="3"/>
+   </properties>
+  </object>
+  <object name="Sleigh" gid="15" x="1574" y="1528">
+   <properties>
+    <property name="Sleigh" value="1"/>
+   </properties>
+  </object>
+  <object name="ElfLaugh" x="451" y="433" width="25" height="15">
+   <properties>
+    <property name="ElfLaugh" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
