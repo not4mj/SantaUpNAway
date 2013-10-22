@@ -621,13 +621,13 @@
             <key>format</key>
             <integer>2</integer>
             <key>realTextureFileName</key>
-            <string>mapForSanta.png</string>
+            <string>mapForSantaN.png</string>
             <key>size</key>
             <string>{1024,512}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:62bf47167832ea503ac5c1912af8afb9$</string>
+            <string>$TexturePacker:SmartUpdate:7f0b79a48d2e2e5da4a027fec1224a91$</string>
             <key>textureFileName</key>
-            <string>mapForSanta.png</string>
+            <string>mapForSantaN.png</string>
         </dict>
     </dict>
 </plist>

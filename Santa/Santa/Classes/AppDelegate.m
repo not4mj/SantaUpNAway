@@ -431,7 +431,7 @@ BOOL nmaStartSessionCompleted;
 	[sharedFileUtils setiPadRetinaDisplaySuffix:@"-ipadhd"];	// Default on iPad RetinaDisplay is "-ipadhd"
 
 	[director setProjection:kCCDirectorProjection2D];//add
-    
+        
     
 	[director setAnimationInterval:1.0/60];//add
 	//[director setDisplayStats:YES];//add

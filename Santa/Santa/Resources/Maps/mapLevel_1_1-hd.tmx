@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="isometric" width="33" height="33" tilewidth="200" tileheight="156">
  <properties>
   <property name="Snow" value="60"/>
   <property name="Timeout" value="95"/>
  </properties>
  <tileset firstgid="1" name="mapForSanta-hd" tilewidth="200" tileheight="200">
-  <image source="mapForSanta-hd.png" width="2048" height="512"/>
+  <image source="mapForSanta-hd.png" width="2048" height="1024"/>
  </tileset>
  <tileset firstgid="51" name="metaSprites-hd" tilewidth="200" tileheight="200">
-  <image source="metaSprites-hd.png" width="200" height="300"/>
+  <image source="metaSprites-hd.png" width="400" height="600"/>
   <tile id="0">
    <properties>
     <property name="blocks_movement" value="1"/>
@@ -41,7 +40,7 @@
    <property name="cc_vertexz" value="-998"/>
   </properties>
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+2TSw7AIAhEPUDvf95uGwIOf03KJG6wA4+Ca41G9+shh4tZTgYDyl3BEe2Z1vRwoD5pTOuPMEh5kT8yE8+8NfPxMHjr7Pa2kgH1/icGjTeTgfNwXhrLZEAsUs4uhor/gNgs9xGGrl2kvJnvIYuDq7WEeAZHpN9Khi+H9J3Gb62/y3krQ8csvLsYeRsoTzXDaHRCL3XNTqYEEQAA
+   H4sIAAAAAAAAA+2TwQ3AMAgDM0BH6f7z9VshCAQb2geW8qE1HIGsNRr9X5c4WuzkMBi83BUcaM+yZobD61PGon6Ewcrr+ZGZZOYdmU+GIVtnt7cZhpvAhDKw7r+LIeJlMmgezStjTAaPxcrZxVBxDx7byXeEoWsXJS/zPbA4tFrLiDM4kH4rGd4c1n8R/2n9Xc6/MnTMIruLyNvw8lQzjEZf6AFu7dO+BBEAAA==
   </data>
  </layer>
  <layer name="GroundObjects" width="33" height="33">
@@ -49,7 +48,7 @@
    <property name="cc_vertexz" value="-900"/>
   </properties>
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+3TsQkAAAjAMC8Q/P9ZV2cRXJILujQCALiU3wGcq+8A1vwIwNThFSooBBEAAA==
+   H4sIAAAAAAAAA+3TuwrAIAyF4TxBoXOvgjj2/R+vERQcWgoiSYf/g0PEJWeJCPBu0+yaRRM0Z0n9s7A271TmZbS7Csb7nhzeBeQfHbLoXQD4MHkXwHCzdwF04x4BAK0bAz5oOAQRAAA=
   </data>
  </layer>
  <layer name="ObjectsOverPlayer" width="33" height="33">
@@ -57,12 +56,12 @@
    <property name="cc_vertexz" value="automatic"/>
   </properties>
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+1W2w7DIAh11V26xff9/5euZjM5I4iAbk+SkIrA8dSiNIQlS9py/4NqODzJ3D7wThXTygElNbCqL4FPy8PKQeurkuGZwUYeFg4lf2NiEmNXzWTey+EBHOi7oI3r5vD9bSR8DYcqFFOT38LxcpB8Uu2icDWh4VBrIMLYes5bfEf2AdelmFzOLA6tdTW5ozGae5ab5/akZ/c4aHKsPcLCQeuna53Cu47LMw5ysNSFhbe3ZjR1j3bpsxHGGGPh0IvFfm65M6z1oKlp7C+zz6Ynn8st+7V9NDL+Hg7XB6W7oMjl0CuZw/7v2SsOU8I7H3oLfA/bHRwSYFab68P0P0f6h5hxR0lxrbUjjL13lCcGOW2GHIr/K12yRJIXLZwLegQRAAA=
+   H4sIAAAAAAAAA+1WTQ/CIAytG35Mw914MTHxoDH+/58nREhqU2jL8MZLmtHyWt6wAwEGBtpx7GAanIn/7qy7V60IlwxArm3VcAl2L9SR4NHTIx/rkHAl/o3hOMbP5km8RQPlPEkd/G54XQ+/v422fonzSuNH0mDJ57iuENfk1uYor/T+XE9oNORv8U7ilm+spHfNPuB1aU0up5eG0rqa3LUczTnLxbk9kXxJgybHekdYNGjn6VqbYFN6zis1WPrCoru1ZzR9j/0FvnuQx5hj0SBxFzS2nBnWftD0dIydKvMc36LBms/lxv2aks3MvFSHuwdrZ0HELtiexCYmX9Ig1azV2wY7AH+HLQ0aHKqZfe4exu8JUP8P0eOMqvFKa89o3HpGtXCwpsmQQ+v/ywYGavgAol6pmwQRAAA=
   </data>
  </layer>
  <layer name="Meta" width="33" height="33">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+1VQQrDMAzrn7rC/v+ynQbBWEKSs51iKJTEdlRFVq/rxAkc9x8eFcNT1iaRYHgWDHfZW/vUdxWHgiHZqzndmQkGVFPXENcTDOq3JJqb8uBoE9Xt1EN3H6gmwYB0n3K+iwc0h4puJxi+/V9B7TRH8dluveNE1Q3CoNS4/whXk8q+g+FtYmC+pNQg3KlmFN2zmVZwdr3d+Vc9w7mLbh7ZPaD9Ll/FkNSj2XT8tfZh8878kfGXcOXywr7X1WTXD/mN44U7PIrlKXylHpXkrOelmvzlc+IEiw8xynD1BBEAAA==
+   H4sIAAAAAAAAA+1UUQqFMAzbffx8iPe/mT9vIJKEpFW/VhiIa7MsazPGihU8fh8sl8NxyXfqkns5+cd/KawBvl0eDgeW69YznITDjM3kwrTucJh529A4lZ5LOaD7unHnnXJIcVUd0tHhwPq+qvlTOrA3cmaow2Hi74Xabo7js+g/0qTS1wi3w7nbk87+mxyULzk1jHe1Z5y+VzPt8ETY6fy7npG8BZpH9Q5sH+W7HCr1bDYTf73jqHlX/qj0q2iV6qLum/YkwmOznnjhEx6l8hy9qh5VybmeV+3JN9eKFSpOfy0EJQQRAAA=
   </data>
  </layer>
  <objectgroup name="Objects" width="33" height="33">
@@ -89,12 +88,12 @@
     <property name="Home" value="1"/>
    </properties>
   </object>
-  <object name="Home" gid="11" x="1404" y="1716">
+  <object name="Home" gid="11" x="1188" y="1896">
    <properties>
     <property name="Home" value="1"/>
    </properties>
   </object>
-  <object name="Home" gid="11" x="1404" y="2028">
+  <object name="Home" gid="11" x="1398" y="1883">
    <properties>
     <property name="Home" value="3"/>
    </properties>

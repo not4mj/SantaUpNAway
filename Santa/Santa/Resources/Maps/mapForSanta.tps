@@ -38,7 +38,7 @@
         <key>dataFormat</key>
         <string>cocos2d</string>
         <key>textureFileName</key>
-        <filename>mapForSanta-hd.png</filename>
+        <filename>mapForSantaN-hd.png</filename>
         <key>flipPVR</key>
         <false/>
         <key>ditherType</key>
@@ -127,7 +127,7 @@
             <enum type="AndEngine::MagFilter">MagLinear</enum>
         </struct>
         <key>dataFileName</key>
-        <filename>mapForSanta-hd.plist</filename>
+        <filename>mapForSantaN-hd.plist</filename>
         <key>multiPack</key>
         <false/>
         <key>mainExtension</key>
