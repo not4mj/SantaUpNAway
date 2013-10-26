@@ -56,7 +56,7 @@
    <property name="cc_vertexz" value="automatic"/>
   </properties>
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+1W2w7DIAh11V26xff9/5euZjM5I4iAbk+SkIrA8dSiNIQlS9py/4NqODzJ3D7wThXTygElNbCqL4FPy8PKQeurkuGZwUYeFg4lf2NiEmNXzWTey+EBHOi7oI3r5vD9bSR8DYcqFFOT38LxcpB8Uu2icDWh4VBrIMLYes5bfEf2AdelmFzOLA6tdTW5ozGae5ab5/akZ/c4aHKsPcLCQeuna53Cu47LMw5ysNSFhbe3ZjR1j3bpsxHGGGPh0IvFfm65M6z1oKlp7C+zz6Ynn8st+7V9NDL+Hg7XB6W7oMjl0CuZw/7v2SsOU8I7H3oLfA/bHRwSYFab68P0P0f6h5hxR0lxrbUjjL13lCcGOW2GHIr/K12yRJIXLZwLegQRAAA=
+   H4sIAAAAAAAAA+1Xa4+EIAzk1L2HG79ffOzx/3/lQVaSsZnCmLtv6ySNtkAZSqEawoULPuYkjyQ/SdYkcRdmi7te2lRbC0uSb2P7Or+UA0aQKPRfjT44vkrbAG0KD4XD1vDTwgTPCfQyfj7JIY/vSJ+B6EUmY7ccFoFD5nkHDnYtqOO8UzjujYcocECe1qeyF6wv+lA42Jz0/Fo+3vptHGv+C3I+lBzo4X0kUoPHN4ocPJ8jvDP7f3HAs+PN60Hpo5zNJfC42/UyO4uJ1ZWzuRK/NdT4Mu5qTtbmbcXjLTzzOD97Ml69J715QuD8WucE29V7kvmo2SyHXGd7eMc+UeBQeLbyAOv5mTtD4VBykvHw4nGvtDP/LdRyUj0jiByvbpe8P2dyMoPVwdpdkPGe5MPYsP4rOWnvaubT8kHcknwGXsNyTKLAAfdrAJ9FZ7XcfufUviEUDnPQcovthTc33lVKTmK9aM3f4lo4ddBfyUn8j9h2+YttC8d/CyUnL7w2fgEqVLw/BBEAAA==
   </data>
  </layer>
  <layer name="Meta" width="33" height="33">
@@ -83,7 +83,7 @@
    <polygon points="0,0 -2,159 391,159 386,-2"/>
   </object>
   <object name="SpawnPlayer" gid="16" x="1638" y="1638"/>
-  <object name="Home" gid="11" x="468" y="780">
+  <object name="Home" gid="11" x="369" y="662">
    <properties>
     <property name="Home" value="1"/>
    </properties>
@@ -103,7 +103,7 @@
     <property name="Home" value="4"/>
    </properties>
   </object>
-  <object name="Home" gid="11" x="702" y="702">
+  <object name="Home" gid="11" x="732" y="399">
    <properties>
     <property name="Home" value="3"/>
    </properties>
@@ -113,7 +113,7 @@
     <property name="Sleigh" value="1"/>
    </properties>
   </object>
-  <object name="ElfLaugh" x="451" y="433" width="25" height="15">
+  <object name="ElfLaugh" x="429" y="360" width="25" height="15">
    <properties>
     <property name="ElfLaugh" value="1"/>
    </properties>
