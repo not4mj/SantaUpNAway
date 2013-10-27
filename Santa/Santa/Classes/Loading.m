@@ -44,7 +44,7 @@
             }
             else
             {
-                defaultImage = [CCSprite spriteWithFile:@"SplashScreen.ong"];
+                defaultImage = [CCSprite spriteWithFile:@"SplashScreen.png"];
             }
         }
         //defaultImage.rotation = -90;

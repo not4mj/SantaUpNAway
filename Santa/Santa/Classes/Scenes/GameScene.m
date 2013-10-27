@@ -460,7 +460,7 @@
                 smoke.anchorPoint = ccp(0.51, -0.60);
             }
             smoke.position = ccpSub(spawnPosition, newCenterPoint);
-            [worldLayer addChild:smoke z:6];
+//            [worldLayer addChild:smoke z:6];
             
             NSMutableArray *animationSmokeFrames = [[[NSMutableArray alloc] initWithCapacity:1] autorelease];
             for (NSUInteger i = 1; i < 30; i++)

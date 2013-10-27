@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
-<map version="1.0" orientation="isometric" width="33" height="33" tilewidth="100" tileheight="78">
+<map version="1.0" orientation="isometric" width="33" height="33" tilewidth="200" tileheight="156">
  <properties>
   <property name="Snow" value="60"/>
   <property name="Timeout" value="95"/>
  </properties>
- <tileset firstgid="1" name="mapForSanta" tilewidth="100" tileheight="100">
-  <image source="mapForSanta.png" width="1024" height="512"/>
+ <tileset firstgid="1" name="mapForSanta-hd" tilewidth="200" tileheight="200">
+  <image source="mapForSanta-hd.png" width="2048" height="1024"/>
  </tileset>
- <tileset firstgid="51" name="metaSprites" tilewidth="100" tileheight="100">
-  <image source="metaSprites.png" width="200" height="300"/>
+ <tileset firstgid="51" name="metaSprites-hd" tilewidth="200" tileheight="200">
+  <image source="metaSprites-hd.png" width="400" height="600"/>
   <tile id="0">
    <properties>
     <property name="blocks_movement" value="1"/>
@@ -36,6 +35,9 @@
    </properties>
   </tile>
  </tileset>
+ <tileset firstgid="57" name="mapForSanta" tilewidth="100" tileheight="100">
+  <image source="mapForSanta.png" width="1024" height="512"/>
+ </tileset>
  <layer name="Ground" width="33" height="33">
   <properties>
    <property name="cc_vertexz" value="-998"/>
@@ -57,12 +59,12 @@
    <property name="cc_vertexz" value="automatic"/>
   </properties>
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+1W2w7DIAh11V26xff9/5euZjM5I4iAbk+SkIrA8dSiNIQlS9py/4NqODzJ3D7wThXTygElNbCqL4FPy8PKQeurkuGZwUYeFg4lf2NiEmNXzWTey+EBHOi7oI3r5vD9bSR8DYcqFFOT38LxcpB8Uu2icDWh4VBrIMLYes5bfEf2AdelmFzOLA6tdTW5ozGae5ab5/akZ/c4aHKsPcLCQeuna53Cu47LMw5ysNSFhbe3ZjR1j3bpsxHGGGPh0IvFfm65M6z1oKlp7C+zz6Ynn8st+7V9NDL+Hg7XB6W7oMjl0CuZw/7v2SsOU8I7H3oLfA/bHRwSYFab68P0P0f6h5hxR0lxrbUjjL13lCcGOW2GHIr/K12yRJIXLZwLegQRAAA=
+   H4sIAAAAAAAAA+1Xy27EIAz0Ya+5V3m0dLvtIdFm9/+/riBh1Vi2mai9NSNZAePYgzGEEJ044WPM8prlLcucJVWxdKn2eQzV9TBleVG6z+NTafAUkgD72Xjf8lVwqaLtIh4IhyXLV+Cnh0E8B9Hn90eQg3xnNWwuRp9lUHrNYQI4FJ4fisMuxnfhV8YdqF0bDwngUHjea3ulNg/IWli2khfCQdek51fz8eavayLyzyj18Kjtm4j1NCSCxzeBHDyfko+l/ysOcu94cT0gNsjenMjOu56vpbdyovvI3pwNvxEivhZ3tCajuL18bEq0PXpOenGIbH69fSLH0XPS8qHb0d4oe/ta27uySQAH5tmrg6toWzm3cOTb7eXdW4ctGLf89xDVZBTDy0W5B6xCjtQkx/Ryocc2R19wE22kJvVZXfx5dzlvbd6dsZKTBHCQ68Vz4vrT9wOO86AW0f0T4TASVltWzu+WIf2sUwFSk/J70Yvf48o5k/WK1KT8j1iq/Ea3UPtvgdTkif+Nb15gEVsEEQAA
   </data>
  </layer>
  <layer name="Meta" width="33" height="33">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+1VQQrDMAzrn7rC/v+ynQbBWEKSs51iKJTEdlRFVq/rxAkc9x8eFcNT1iaRYHgWDHfZW/vUdxWHgiHZqzndmQkGVFPXENcTDOq3JJqb8uBoE9Xt1EN3H6gmwYB0n3K+iwc0h4puJxi+/V9B7TRH8dluveNE1Q3CoNS4/whXk8q+g+FtYmC+pNQg3KlmFN2zmVZwdr3d+Vc9w7mLbh7ZPaD9Ll/FkNSj2XT8tfZh8878kfGXcOXywr7X1WTXD/mN44U7PIrlKXylHpXkrOelmvzlc+IEiw8xynD1BBEAAA==
+   H4sIAAAAAAAAA+1VWwrDMAzrncro/W+2r0EwlpDkdF8xBEr8iKLI7nUdO4bt/sNSMTxlb2IJhmfBcBffWqd+qzgUDImvxnRnJhhQTt1DXE8wqHdJNDflwdEmytuph+49UE6CAek+5XwXD6gPFd1OMPzqf4LcaYwyZ7v9jhNVNwiDkuP+I1xNKv43MbC5pOQg3KlmFN2znlZwdrXd/ldnhvMWXT+yd0D+Ll7FkOSj3nTma63D+p3NR8ZfwpXLC7uvq8muHup1ZxbumFEsTuErnVFJzHpeqsk317FjzL6koAsXBBEAAA==
   </data>
  </layer>
  <objectgroup name="Objects" width="33" height="33">
@@ -84,27 +86,27 @@
    <polygon points="0,0 -2,159 391,159 386,-2"/>
   </object>
   <object name="SpawnPlayer" gid="16" x="1638" y="1638"/>
-  <object name="Home" gid="11" x="468" y="780">
+  <object name="Home" gid="11" x="369" y="662">
    <properties>
     <property name="Home" value="1"/>
    </properties>
   </object>
-  <object name="Home" gid="11" x="1404" y="1716">
+  <object name="Home" gid="11" x="169" y="1085">
    <properties>
     <property name="Home" value="1"/>
    </properties>
   </object>
-  <object name="Home" gid="11" x="1404" y="2028">
+  <object name="Home" gid="11" x="1246" y="1717">
    <properties>
     <property name="Home" value="3"/>
    </properties>
   </object>
-  <object name="Home" gid="11" x="1794" y="1560">
+  <object name="Home" gid="11" x="3589" y="3129">
    <properties>
     <property name="Home" value="4"/>
    </properties>
   </object>
-  <object name="Home" gid="11" x="702" y="702">
+  <object name="Home" gid="11" x="732" y="399">
    <properties>
     <property name="Home" value="3"/>
    </properties>
@@ -114,7 +116,7 @@
     <property name="Sleigh" value="1"/>
    </properties>
   </object>
-  <object name="ElfLaugh" x="451" y="433" width="25" height="15">
+  <object name="ElfLaugh" x="429" y="360" width="25" height="15">
    <properties>
     <property name="ElfLaugh" value="1"/>
    </properties>
