@@ -154,13 +154,13 @@ BOOL nmaStartSessionCompleted;
     // Leave the following line uncommented if you want the info screen dynamically downloaded from Web.
     //[[NmaNews sharedNmaNews] nmaShowNewsScreenOnViewController:director];
  
-//    [[CCDirector sharedDirector] stopAnimation];
-//[navController setNavigationBarHidden:NO];
-//    infoVC = [[InfoViewController alloc] init];
-//    
-//    [navController pushViewController:infoVC animated:YES];
-//    [infoVC release];
-    [self launchMorePresents:0.1];    
+    [[CCDirector sharedDirector] stopAnimation];
+[navController setNavigationBarHidden:NO];
+    infoVC = [[InfoViewController alloc] init];
+    
+    [navController pushViewController:infoVC animated:YES];
+    [infoVC release];
+//    [self launchMorePresents:0.1];
     // Leave the following line uncommented if you'd like to show the local version of the info screen.
     //[[CCDirector sharedDirector] replaceScene:[CCTransitionSlideInB transitionWithDuration:0.4 scene:[Info scene]]];
 }

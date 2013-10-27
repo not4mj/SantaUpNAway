@@ -26,17 +26,17 @@
         CGSize screenSize = [[CCDirector sharedDirector] winSize];
         [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"selectGame.plist"];
         
-        CCFileUtils *sharedFileUtils = [CCFileUtils sharedFileUtils];
-        [sharedFileUtils setiPadSuffix:@"-ipad"];
+//        CCFileUtils *sharedFileUtils = [CCFileUtils sharedFileUtils];
+//        [sharedFileUtils setiPadSuffix:@"-ipad"];
         
         CCSprite *background;
         if (screenSize.width == 568)
         {
-            background = [CCSprite spriteWithFile:@"choose stage background.png"];
+            background = [CCSprite spriteWithFile:@"choose stage background-5hd.png"];
             
         }
         else{
-            background = [CCSprite spriteWithFile:@"choose stage background-5hd.png"];
+            background = [CCSprite spriteWithFile:@"choose stage background.png"];
         }
         
         background.position = CGPointMake(screenSize.width / 2, screenSize.height / 2);

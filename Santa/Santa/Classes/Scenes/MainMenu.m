@@ -93,7 +93,7 @@
         removeAdsNormSprite.opacity = 1;
         CCMenuItemSprite *removeAdsItem = [CCMenuItemSprite itemWithNormalSprite:removeAdsNormSprite selectedSprite:removeAdsSelSprite
                                                                           target:self
-                                                                        selector:@selector(onRemoveAdsGames)];
+                                                                        selector:@selector(onOptions)];
         
         removeAdsItem.normalImage=[CCSprite spriteWithSpriteFrameName:@"remove ads.png"];
         
@@ -107,7 +107,7 @@
         CCSprite *soundsSelSprite = [CCSprite spriteWithSpriteFrameName:@"sound_pressed.png"];
         CCSprite *soundsNormSprite = [CCSprite spriteWithFile:@"sound_pressed.png" rect:CGRectMake(0, 0, soundsSelSprite.boundingBox.size.width, soundsSelSprite.boundingBox.size.height)];
         soundsNormSprite.opacity = 1;
-        CCMenuItemSprite *soundsItem = [CCMenuItemSprite itemWithNormalSprite:soundsNormSprite selectedSprite:soundsSelSprite target:self selector:@selector(onMoreGames)];
+        CCMenuItemSprite *soundsItem = [CCMenuItemSprite itemWithNormalSprite:soundsNormSprite selectedSprite:soundsSelSprite target:self selector:@selector(onOptions)];
         
         soundsItem.normalImage=[CCSprite spriteWithSpriteFrameName:@"sound.png"];
         
