@@ -55,7 +55,7 @@
         CCSprite *infoSelSprite = [CCSprite spriteWithSpriteFrameName:@"info_pressed.png"];
         CCSprite *infoNormSprite = [CCSprite spriteWithFile:@"info_pressed.png" rect:CGRectMake(0, 0, infoSelSprite.boundingBox.size. width, infoSelSprite.boundingBox.size.height)];
         infoNormSprite.opacity = 0;
-       CCMenuItemSprite *infoItem = [CCMenuItemSprite itemWithNormalSprite:infoNormSprite selectedSprite:infoSelSprite
+       infoItem = [CCMenuItemSprite itemWithNormalSprite:infoNormSprite selectedSprite:infoSelSprite
                                                                     target:self
                                                                   selector:@selector(onInfo)];
         
@@ -71,13 +71,13 @@
         //}
         
         
-        CCSprite *optionsSelSprite = [CCSprite spriteWithSpriteFrameName:@"time machine pressed.png"];
-        CCSprite *optionsNormSprite = [CCSprite spriteWithFile:@"time machine pressed.png" rect:CGRectMake(0, 0, optionsSelSprite.boundingBox.size.width, optionsSelSprite.boundingBox.size.height)];
-        optionsNormSprite.opacity = 0;
-        CCMenuItemSprite *optionsItem = [CCMenuItemSprite itemWithNormalSprite:optionsNormSprite selectedSprite:optionsSelSprite
+        CCSprite *timeMachineSelSprite = [CCSprite spriteWithSpriteFrameName:@"time machine pressed.png"];
+        CCSprite *timeMachineNormSprite = [CCSprite spriteWithFile:@"time machine pressed.png" rect:CGRectMake(0, 0, timeMachineSelSprite.boundingBox.size.width, timeMachineSelSprite.boundingBox.size.height)];
+        timeMachineNormSprite.opacity = 0;
+        CCMenuItemSprite *timeMachineItem = [CCMenuItemSprite itemWithNormalSprite:timeMachineNormSprite selectedSprite:timeMachineSelSprite
                                                                         target:self
-                                                                      selector:@selector(onOptions)];
-        optionsItem.normalImage = [CCSprite spriteWithSpriteFrameName:@"time machine.png"];
+                                                                      selector:@selector(ontimeMachine)];
+        timeMachineItem.normalImage = [CCSprite spriteWithSpriteFrameName:@"time machine.png"];
         
         CCSprite *moreGamesSelSprite = [CCSprite spriteWithSpriteFrameName:@"more games_presssed.png"];
         CCSprite *moreGamesNormSprite = [CCSprite spriteWithFile:@"more games_presssed.png" rect:CGRectMake(0, 0, moreGamesSelSprite.boundingBox.size.width, moreGamesSelSprite.boundingBox.size.height)];
@@ -93,7 +93,7 @@
         removeAdsNormSprite.opacity = 1;
         CCMenuItemSprite *removeAdsItem = [CCMenuItemSprite itemWithNormalSprite:removeAdsNormSprite selectedSprite:removeAdsSelSprite
                                                                           target:self
-                                                                        selector:@selector(onOptions)];
+                                                                        selector:@selector(ontimeMachine)];
         
         removeAdsItem.normalImage=[CCSprite spriteWithSpriteFrameName:@"remove ads.png"];
         
@@ -107,7 +107,7 @@
         CCSprite *soundsSelSprite = [CCSprite spriteWithSpriteFrameName:@"sound_pressed.png"];
         CCSprite *soundsNormSprite = [CCSprite spriteWithFile:@"sound_pressed.png" rect:CGRectMake(0, 0, soundsSelSprite.boundingBox.size.width, soundsSelSprite.boundingBox.size.height)];
         soundsNormSprite.opacity = 1;
-        CCMenuItemSprite *soundsItem = [CCMenuItemSprite itemWithNormalSprite:soundsNormSprite selectedSprite:soundsSelSprite target:self selector:@selector(onOptions)];
+        CCMenuItemSprite *soundsItem = [CCMenuItemSprite itemWithNormalSprite:soundsNormSprite selectedSprite:soundsSelSprite target:self selector:@selector(ontimeMachine)];
         
         soundsItem.normalImage=[CCSprite spriteWithSpriteFrameName:@"sound.png"];
         
@@ -116,26 +116,28 @@
         
         if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
         {
-            infoItem.position = [self posIphoneToPersent:ccp(62, 447)];
-            optionsItem.position = [self posIphoneToPersent:ccp(67, 576)];
-            startGameItem.position = [self posIphoneToPersent:ccp(622, 590)];
-            moreGamesItem.position = [self posIphoneToPersent:ccp(882, 580)];
-            removeAdsItem.position=[self posIphoneToPersent:ccp(992,600)];
-            restorePurchaseItem.position=[self posIphoneToPersent:ccp(1000,610)];
-            soundsItem.position=[self posIphoneToPersent:ccp(1100,630)];
+            startGameItem.position = [self posIphoneToPersent:ccp(546, 220)];
+            infoItem.position = [self posIphoneToPersent:ccp(545, 314)];
+            timeMachineItem.position = [self posIphoneToPersent:ccp(550, 401)];
+            removeAdsItem.position=[self posIphoneToPersent:ccp(778,95)];
+            restorePurchaseItem.position=[self posIphoneToPersent:ccp(760,215)];
+            moreGamesItem.position = [self posIphoneToPersent:ccp(762, 475  )];
+
+            soundsItem.position=[self posIphoneToPersent:ccp(133,505)];
             
         }
         else
         {
             infoItem.position = [self posToPersent:ccp(1200, 750)];
-            optionsItem.position = [self posToPersent:ccp(1200, 965)];
+            timeMachineItem.position = [self posToPersent:ccp(1200, 965)];
             startGameItem.position = [self posToPersent:ccp(1200, 530)];
             moreGamesItem.position = [self posToPersent:ccp(1700, 1150)];
             removeAdsItem.position=[self posToPersent:ccp(1750,230)];
             restorePurchaseItem.position=[self posToPersent:ccp(1720,510)];
+            
             soundsItem.position=[self posToPersent:ccp(200,1210)];
         }
-        CCMenu *menu = [CCMenu menuWithItems:soundsItem,restorePurchaseItem,removeAdsItem,moreGamesItem,startGameItem,optionsItem,infoItem, nil];
+        CCMenu *menu = [CCMenu menuWithItems:soundsItem,restorePurchaseItem,removeAdsItem,moreGamesItem,startGameItem,timeMachineItem,infoItem, nil];
         menu.position = ccp(0, 0);
         [self addChild:menu];
         
@@ -236,7 +238,7 @@
     //[delegate fmnowLaunchNews];
 }
 
-- (void) onOptions
+- (void) ontimeMachine
 {
     AppDelegate *delegate = (AppDelegate *) [UIApplication sharedApplication].delegate;
     [delegate launchOptions];

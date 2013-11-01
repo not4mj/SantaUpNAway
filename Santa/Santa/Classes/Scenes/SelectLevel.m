@@ -22,7 +22,7 @@
 {
 	if ((self=[super init]))
 	{
-        [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"selectLevelSprites.plist"];
+        [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"selectLevel.plist"];
       
         CGSize screenSize = [[CCDirector sharedDirector] winSize];
         

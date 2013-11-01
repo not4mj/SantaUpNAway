@@ -24,7 +24,7 @@
 	if ((self=[super init]))
 	{
         CGSize screenSize = [[CCDirector sharedDirector] winSize];
-        [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"selectGame.plist"];
+        [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"SelectGame.plist"];
         
 //        CCFileUtils *sharedFileUtils = [CCFileUtils sharedFileUtils];
 //        [sharedFileUtils setiPadSuffix:@"-ipad"];
@@ -44,18 +44,18 @@
         
         [self addSnow];
 
-        CCSprite *nextLevelSprite = [CCSprite spriteWithSpriteFrameName:@"city.png"];
-        CCSprite *nextLevelSelSprite = [CCSprite spriteWithSpriteFrameName:@"city_pressed.png"];
-        CCMenuItemSprite *nextLevelItem = [CCMenuItemSprite itemWithNormalSprite:nextLevelSprite
-                                                                selectedSprite:nextLevelSelSprite
+        CCSprite *citySprite = [CCSprite spriteWithSpriteFrameName:@"city.png"];
+        CCSprite *citySelSprite = [CCSprite spriteWithSpriteFrameName:@"city_pressed.png"];
+        CCMenuItemSprite *cityItem = [CCMenuItemSprite itemWithNormalSprite:citySprite
+                                                                selectedSprite:citySelSprite
                                                                         target:self
                                                                       selector:@selector(onSelectLevel)];
 
         
-        CCSprite *MenuButton = [CCSprite spriteWithSpriteFrameName:@"jungle.png"];
-        CCSprite *MenuSelButton = [CCSprite spriteWithSpriteFrameName:@"jungle_pressed.png"];
-        CCMenuItemSprite *menuItem = [CCMenuItemSprite itemWithNormalSprite:MenuButton
-                                                             selectedSprite:MenuSelButton
+        CCSprite *jungleButton = [CCSprite spriteWithSpriteFrameName:@"jungle.png"];
+        CCSprite *jungleSelButton = [CCSprite spriteWithSpriteFrameName:@"jungle_pressed.png"];
+        CCMenuItemSprite *jungleItem = [CCMenuItemSprite itemWithNormalSprite:jungleButton
+                                                             selectedSprite:jungleSelButton
                                                                      target:self
                                                                    selector:@selector(onSelectLevel)];
         
@@ -67,19 +67,22 @@
         
         if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
         {
-            nextLevelItem.position = [self posIphoneToPersent:ccp(228, 475)];
-            menuItem.position = [self posIphoneToPersent:ccp(248, 564)];
-            BackItem.position = [self posIphoneToPersent:ccp(214, 71)];
+             BackItem.position = [self posIphoneToPersent:ccp(470, 235)];
+            cityItem.position = [self posIphoneToPersent:ccp(220, 450)];
+            jungleItem.position = [self posIphoneToPersent:ccp(730, 450)];
+           
         }
         else
         {
-            nextLevelItem.position = [self posToPersent:ccp(516, 1136)];
-            menuItem.position = [self posToPersent:ccp(587, 1359)];
-            BackItem.position = [self posIphoneToPersent:ccp(412, 155)];
+            //iPad
+            BackItem.position = [self posIphoneToPersent:ccp(470, 235)];
+            cityItem.position = [self posToPersent:ccp(420, 1060)];
+            jungleItem.position = [self posToPersent:ccp(1610, 1060)];
+            
         }
         
     
-        CCMenu *menu = [CCMenu menuWithItems:nextLevelItem, menuItem,BackItem, nil];
+        CCMenu *menu = [CCMenu menuWithItems:cityItem, jungleItem,BackItem, nil];
         menu.position = CGPointZero;
         [self addChild:menu z:10];
 }
@@ -139,5 +142,4 @@
         newPos = ccpAdd(newPos, ccp(44, 0));
     }
     return newPos;
-}
-@end
+}@end
